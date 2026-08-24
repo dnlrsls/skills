@@ -18,3 +18,4 @@ Each skill provides focused instructions for a specific engineering task, practi
 ## Documentation
 
 - [Compatibility policy](docs/compatibility.md) — the portable canonical skill format and compatibility-claim policy.
+- [Skill style guide](docs/skill-style-guide.md) — the normative guide for authoring and reviewing canonical skills.
