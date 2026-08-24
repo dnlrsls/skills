@@ -12,3 +12,7 @@ This public repository contains custom, reusable skills for software engineering
 ## Contents
 
 Each skill provides focused instructions for a specific engineering task, practice, or workflow. The collection will grow as new needs and reusable patterns emerge.
+
+## Documentation
+
+- [Compatibility policy](docs/compatibility.md) — the portable canonical skill format and compatibility-claim policy.
