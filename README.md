@@ -1,19 +1,23 @@
-# Software Engineering Skills
+# Practical Skills for AI Agents
 
 ![Software Engineering Skills banner](skillsbanner.png)
 
-This public repository contains custom, reusable skills for software engineering workflows. These skills are designed to help AI coding agents follow consistent practices across different projects.
+This repository contains reusable skills for tasks that AI agents can usually complete, but often handle slowly, inconsistently, or less effectively than they should. Each skill packages a proven workflow or guardrail so agents spend less time rediscovering the right approach and produce a better result sooner.
 
 ## Purpose
 
-- Centralize our custom engineering skills.
-- Reuse proven workflows across projects.
-- Improve consistency, quality, and maintainability.
-- Share practical guidance with the software engineering community.
+- Reduce the time agents lose on common, straightforward tasks.
+- Correct recurring failure modes with proven workflows and guardrails.
+- Reuse effective approaches across projects instead of solving the same problem again.
+- Improve results without tying the workflow to one model, client, or technology stack.
 
 ## Contents
 
-Each skill provides focused instructions for a specific engineering task, practice, or workflow. The collection will grow as new needs and reusable patterns emerge.
+Each skill addresses a repeated task that agents are known to handle poorly or inefficiently. A skill is added only when the problem is recurring, the correction has proved useful, and the outcome can be verified.
+
+Current skills:
+
+- [`skill-creator`](skills/skill-creator/SKILL.md) — creates focused Agent Skills from proven, reusable corrections instead of speculative ideas.
 
 ## Documentation
 
