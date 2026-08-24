@@ -6,7 +6,14 @@ Read the [Compatibility Policy](compatibility.md) with this guide. If they diffe
 
 ## Creation gate
 
-Create a skill only for a reusable workflow, decision pattern, or project convention that benefits from agent guidance. Do not create one for a trivial, one-off task or material better served by ordinary documentation.
+Create a skill only when all of these conditions hold:
+
+- The maintainer performs the task repeatedly.
+- Agents have a known, recurring failure mode for that task.
+- A proven procedure, guardrail, resource, or deterministic helper corrects the failure.
+- The result is reusable across projects and can be verified.
+
+Do not create a skill for a speculative need, a trivial one-off task, generic advice without an observed failure, or material better served by ordinary documentation.
 
 ## Canonical layout
 
@@ -43,7 +50,7 @@ Do not require an author, per-skill version, changelog, `CODEOWNERS`, Changesets
 
 The body **MUST** communicate four concepts: when to use the skill, what to do, applicable constraints or risks, and an expected result that can be verified. Authors may choose headings and structure that suit the workflow; do not add empty boilerplate merely to satisfy these concepts.
 
-Use direct capability language rather than client, model, or OS-specific commands. Use local paths relative to the skill root. Keep the main instructions focused; `SKILL.md` **SHOULD** remain under 500 lines, following the Agent Skills recommendation rather than a stricter hard limit.
+Use direct capability language rather than commands tied to a client, model, programming language, framework, runtime, or operating system. General workflows **MUST** remain technology-stack agnostic. When a dependency is inherent, isolate and declare it instead of embedding it as an implicit assumption. Use local paths relative to the skill root. Keep the main instructions focused; `SKILL.md` **SHOULD** remain under 500 lines, following the Agent Skills recommendation rather than a stricter hard limit.
 
 ## Resources and dependencies
 
@@ -63,8 +70,9 @@ State an observable result and a verification method proportional to the work. D
 ## Author review checklist
 
 - [ ] The workflow is reusable and belongs in a skill.
+- [ ] The skill addresses a repeated task, a known agent failure, and a proven correction.
 - [ ] The directory, name, and minimal frontmatter are correct.
 - [ ] The one-line description explains the action, use case, and realistic triggers.
 - [ ] The body covers use, action, relevant risks, and a verifiable result.
-- [ ] Instructions are portable, dependencies are declared, and resources are placed appropriately.
+- [ ] Instructions are model- and technology-stack agnostic; inherent dependencies are isolated and declared.
 - [ ] Local references resolve, and the skill has no unnecessary maintenance metadata or process.
