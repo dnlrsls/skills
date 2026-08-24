@@ -1,5 +1,7 @@
 # Software Engineering Skills
 
+![Software Engineering Skills banner](skillsbanner.png)
+
 This public repository contains custom, reusable skills for software engineering workflows. These skills are designed to help AI coding agents follow consistent practices across different projects.
 
 ## Purpose

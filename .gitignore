@@ -1,0 +1,15 @@
+# Gentle AI local metadata
+.atl/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local logs
+*.log
