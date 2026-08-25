@@ -11,13 +11,13 @@ This repository contains reusable skills for tasks that AI agents can usually co
 - Reuse effective approaches across projects instead of solving the same problem again.
 - Improve results without tying the workflow to one model, client, or technology stack.
 
-## Contents
+## First practical skill
 
-Each skill addresses a repeated task that agents are known to handle poorly or inefficiently. A skill is added only when the problem is recurring, the correction has proved useful, and the outcome can be verified.
+[`local-dev-runner`](skills/local-dev-runner/SKILL.md) is the first practical reusable skill in this repository. It helps agents start local development environments with minimal, repository-focused discovery: it uses documented commands and matching documented platform or runtime variants, manages aggregate and service processes with ownership-safe cleanup, and keeps persistent launches out of the agent foreground channel.
 
-Current skills:
+When a visible terminal is needed, it supports one framed printable-ASCII status dashboard inspired by the repository banner. It reports `STARTING` before readiness, then evidence-based `READY` or `FAILED` status with actual endpoints, and does not repeat unchanged commands after deterministic failures.
 
-- [`skill-creator`](skills/skill-creator/SKILL.md) — creates focused Agent Skills from proven, reusable corrections instead of speculative ideas.
+[`skill-creator`](skills/skill-creator/SKILL.md) remains the guide for creating focused Agent Skills only from proven, reusable corrections rather than speculative ideas.
 
 ## Documentation
 
